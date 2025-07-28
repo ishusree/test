@@ -4,117 +4,174 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ishwarya Pilli | DevOps Engineer</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+    :root {
+      --sea-green: #2e8b57;
+      --light-sea-green: #3cb371;
+      --text-gray: #555;
     }
-    header {
-      background-color: #5c6bc0;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5fdf7;
+      color: var(--text-gray);
+    }
+    .bg-sea-green {
+      background-color: var(--sea-green) !important;
+    }
+    .text-sea-green {
+      color: var(--sea-green) !important;
+    }
+    .btn-sea-green {
+      background-color: var(--light-sea-green);
       color: white;
-      padding: 2rem;
-      text-align: center;
+    }
+    .btn-sea-green:hover {
+      background-color: var(--sea-green);
     }
     section {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    h2 {
-      color: #5c6bc0;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    .card {
-      background: white;
-      margin: 1rem 0;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    ul {
-      padding-left: 1.2rem;
+      padding: 60px 0;
     }
     footer {
+      background-color: #e0f5e9;
+      padding: 20px 0;
       text-align: center;
-      padding: 1rem;
-      background: #eee;
-      margin-top: 2rem;
-    }
-    a {
-      color: #5c6bc0;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      color: #444;
     }
   </style>
 </head>
 <body>
- 
-  <header>
-    <h1>Ishwarya Pilli</h1>
-    <p>DevOps Engineer | Cloud Enthusiast | Infrastructure Automator</p>
+
+  <!-- Header -->
+  <header class="bg-sea-green text-white text-center py-5">
+    <h1 class="display-4">Ishwarya Pilli</h1>
+    <p class="lead">DevOps Engineer | Cloud Enthusiast</p>
   </header>
- 
-  <section>
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        I'm a DevOps Engineer with 4 years of experience in automating infrastructure provisioning, CI/CD, container orchestration, and monitoring setups.
-        Passionate about enabling teams to deliver reliable and secure software faster, I specialize in tools like Jenkins, Ansible, Docker, Kubernetes, and AWS.
-      </p>
-    </div>
- 
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Tata Consultancy Services (2021 – Present)</h3>
-      <p><strong>Role:</strong> DevOps Engineer</p>
-      <ul>
-        <li>Deployed and managed containerized applications with Docker, Podman, Kubernetes, ECS, and EKS.</li>
-        <li>Automated infrastructure with Terraform, AWS CloudFormation, and Ansible.</li>
-        <li>Implemented centralized monitoring using Prometheus, Grafana, CloudWatch, and logging with Kibana.</li>
-        <li>Secured applications through SAST (SonarQube, Fortify) and DAST (ZAP Proxy, Anchore).</li>
-        <li>Built robust CI/CD pipelines using Jenkins and GitLab CI.</li>
-      </ul>
-    </div>
- 
-    <h2>Skills</h2>
-    <div class="card">
-      <ul>
-        <li><strong>CI/CD:</strong> Jenkins, GitLab CI</li>
-        <li><strong>Containerization:</strong> Docker, Kubernetes, Helm, Podman</li>
-        <li><strong>Cloud:</strong> AWS, Azure</li>
-        <li><strong>IaC:</strong> Terraform, AWS CloudFormation</li>
-        <li><strong>Monitoring & Logging:</strong> Prometheus, Grafana, CloudWatch, Kibana</li>
-        <li><strong>Security Tools:</strong> SonarQube, Fortify, ZAP Proxy, Anchore</li>
-        <li><strong>Scripting & Config Management:</strong> Bash, Ansible</li>
-        <li><strong>Others:</strong> NGINX, Tomcat, WebLogic, Nexus, Agile</li>
-      </ul>
-    </div>
- 
-    <h2>Education</h2>
-    <div class="card">
-      <p><strong>Bachelor's Degree in Engineering (EEE)</strong><br/>
-      Chaitanya Bharati Institute of Technology<br/>
-      2017 – 2021</p>
-    </div>
- 
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:ishwarya.pilli@gmail.com">ishwarya.pilli@gmail.com</a></p>
-      <p>Phone: +91 9100899671</p>
-      <p>Location: Hyderabad, India</p>
-GitHub: github.com/YOUR_USERNAME</a></p>
-LinkedIn: linkedin.com/in/YOUR_LINKEDIN</a></p>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="text-sea-green mb-4">About Me</h2>
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <p>
+            As a Devops Engineer with 4 years of experience, I have strong foundation in designing and implementing DevOps workflows and pipelines ensuring seamless integration, continuous deployment and efficient automation across multiple environments.I have successfully automated infrastructure provisioning, CI/CD, and monitoring setups using tools like Jenkins, Ansible, Docker, and Kubernetes and I am passionate about
+            optimizing development lifecycles and enabling teams to deliver high-quality software faster and more reliably.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
- 
-  <footer>
-    &copy; 2025 Ishwarya Pilli. All rights reserved.
-  </footer>
- 
+
+  <!-- Experience -->
+  <section id="experience" class="bg-light">
+    <div class="container">
+      <h2 class="text-sea-green mb-4">Experience</h2>
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Tata Consultancy Services (2021 – Present)</h5>
+          <h6 class="text-muted">DevOps Engineer</h6>
+          <ul>
+            <li>Successfully implemented DevOps practices for multiple clients, reducing manual setup time by automating deployments and configuration using shell scripts and ansible.</li>
+            <li>Ensured efficient source code management in GitLab by applying best practices for branching and merging to enhance maintainability.</li>
+            <li>Designed and built robust CI/CD pipelines across diverse techstacks using Jenkins.</li>
+            <li>Automated application security integration by embedding security tools into the CI/CD lifecycle.</li>
+			<li>Deployed and managed containerized applications using Docker and Podman, and orchestrated workloads using Kubernetes, AWS ECS,and EKS.</li>
+			<li>Set up centralized monitoring and logging solutions with Prometheus, Grafana, AWS CloudWatch, AWS CloudTrail, and Kibana, improving system visibility and performance troubleshooting.</li>
+			<li>Configured NGINX for reverse proxy and load balancing; managed SSL certificates to ensure secure communication.</li>
+			<li>Automated cloud infrastructure provisioning and configuration management using Infrastructure as Code principles.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="text-sea-green mb-4">Skills</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h6 class="card-title">SCM & CI/CD</h6>
+              <p>GitLab, Jenkins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h6 class="card-title">Cloud & Containerization</h6>
+              <p>AWS, Azure, Docker, Kubernetes, Helm</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h6 class="card-title">IaC & Config Management</h6>
+              <p>Terraform, CloudFormation, Ansible</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h6 class="card-title">Monitoring & Logging</h6>
+              <p>Prometheus, Grafana, CloudWatch, Kibana</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h6 class="card-title">Security</h6>
+              <p>SonarQube, Fortify, ZAP, Anchore</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h6 class="card-title">Other Tools</h6>
+              <p>NGINX, Tomcat, Nexus, Bash Scripting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="bg-light">
+    <div class="container">
+      <h2 class="text-sea-green mb-4">Education</h2>
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <p><strong>Bachelor's in Engineering (EEE)</strong><br/>
+          Chaitanya Bharati Institute of Technology, 2017 – 2021</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-sea-green mb-4">Contact</h2>
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <p>Email: <a href="mailto:ishwarya.pilli@gmail.com">ishwarya.pilli@gmail.com</a></p>
+          <p>Phone: +91 9100899671</p>
+          <p>Location: Hyderabad, India</p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/pilli-ishwarya-20ba2a22a" target="_blank">linkedin.com/in/pilli-ishwarya-20ba2a22a</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </body>
 </html>
